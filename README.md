@@ -1,5 +1,7 @@
 # Skeleton UI MCP Server
 
+> This project was built with the assistance of coding agents (Claude Code).
+
 An MCP server that exposes the [Skeleton UI](https://www.skeleton.dev) documentation as tools for coding agents. 
 Documentation is served from pre-fetched static files — no live network calls during tool use.
 
