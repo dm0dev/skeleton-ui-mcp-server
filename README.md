@@ -45,13 +45,15 @@ Add to your `claude_desktop_config.json`:
 
 ## Refreshing the Static Files
 
-The `static/` directory contains pre-fetched documentation from `skeleton.dev`. To refresh it:
+The `static/` directory contains pre-fetched documentation from `skeleton.dev`. To refresh it manually:
 
 ```bash
 uv run --extra fetch python index.py
 ```
 
 This re-fetches all pages listed in `static/_llms.txt` and regenerates the individual JSON files.
+
+A GitHub Actions workflow (`.github/workflows/update-static.yml`) runs this automatically every night at 03:00 UTC and commits any changes back to the repository. It can also be triggered manually via **Actions → Update static docs → Run workflow**. The integrity tests (`tests/test_audit.py`) run as part of the workflow before committing — if they fail the commit is skipped.
 
 ## Quality Assurance
 
