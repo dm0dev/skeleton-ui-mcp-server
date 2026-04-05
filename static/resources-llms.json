@@ -1,0 +1,6 @@
+{
+  "url": "https://www.skeleton.dev/docs/svelte/resources/llms.md",
+  "content": "# LLMs\n\nDocumentation for LLMs. Beep Boop.\n\nThe Skeleton `LLMs.txt` files provide concise, up-to-date documentation optimized for large language models. The have been implemented to follow the **LLM.txt Standard**.\n\n<figure class=\"linker bg-noise\">\n  <a class=\"btn preset-filled\" href=\"https://llmstxt.org/\" target=\"_blank\">\n    View LLM Standard \u2192\n  </a>\n</figure>\n\n## Paths\n\n\\| Path                                 | Description                                               |\n\\| ------------------------------------ | --------------------------------------------------------- |\n\\| [/llms.txt](/llms.txt)               | Comprehensive list of LLMs txt files.                     |\n\\| [/llms-react.txt](/llms-react.txt)   | Complete documentation for Skeleton, tailored for React.  |\n\\| [/llms-svelte.txt](/llms-svelte.txt) | Complete documentation for Skeleton, tailored for Svelte. |\n\\| [/llms-full.txt](/llms-full.txt)     | Complete documentation for Skeleton                       |\n",
+  "title": "LLMs",
+  "group": "Resources"
+}

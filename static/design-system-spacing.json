@@ -1,0 +1,6 @@
+{
+  "url": "https://www.skeleton.dev/docs/svelte/design/spacing.md",
+  "content": "# Spacing\n\nSet a dynamic scale for application whitespace.\n\nSkeleton utilizes the power of Tailwind to provide a universal system for customizing spacing throughout your application. While enabling this customization per each theme.\n\n<Preview client:visible>\n  <Default client:visible />\n</Preview>\n\n## How It Works\n\nIn recent versions of Skeleton, this is implemented using the official [Tailwind Spacing](https://tailwindcss.com/blog/tailwindcss-v4#dynamic-utility-values-and-variants) property.\n\n```css\n@layer theme {\n\t:root {\n\t\t--spacing: 0.25rem;\n\t}\n}\n```\n\nHowever, this can be customized to each Skeleton theme.\n\n```css\n[data-theme='cerberus'] {\n\t--spacing: 0.25rem;\n}\n[data-theme='mona'] {\n\t--spacing: 0.2rem;\n}\n```\n\n## Supported Properties\n\nThe scaling system supports all relevant Tailwind utility classes, including, but not limited to:\n\n`padding`, `margin`, `width`, `minWidth`, `maxWidth`, `height`, `minHeight`, `maxHeight`, `gap`, `inset`, `space`, `translate`\n",
+  "title": "Spacing",
+  "group": "Design System"
+}

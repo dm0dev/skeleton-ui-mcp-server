@@ -1,0 +1,37 @@
+[project]
+name = "skeleton-ui-mcp-server"
+version = "0.1.0"
+description = "MCP server exposing Skeleton UI documentation as tools for coding agents"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "mcp[cli]>=1.27.0",
+    "toon-format",
+]
+
+[project.optional-dependencies]
+fetch = [
+    "httpx>=0.28.1",
+    "python-slugify>=8.0.4",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+    "pyright>=1.1",
+    "pip-audit>=2.7",
+]
+
+[tool.uv.sources]
+toon-format = { git = "https://github.com/toon-format/toon-python.git" }
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.pyright]
+pythonVersion = "3.14"
+typeCheckingMode = "basic"
+include = ["main.py", "index.py"]

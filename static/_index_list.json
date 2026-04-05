@@ -1,0 +1,524 @@
+[
+  {
+    "title": "Introduction",
+    "excerpt": [
+      "Learn more about Skeleton and how it can serve you."
+    ],
+    "group": "Get Started",
+    "url": "https://www.skeleton.dev/docs/svelte/get-started/introduction.md",
+    "slug": "get-started-introduction"
+  },
+  {
+    "title": "Installation",
+    "excerpt": [
+      "Learn how to install and setup Skeleton for your project."
+    ],
+    "group": "Get Started",
+    "url": "https://www.skeleton.dev/docs/svelte/get-started/installation.md",
+    "slug": "get-started-installation"
+  },
+  {
+    "title": "Fundamentals",
+    "excerpt": [
+      "An introduction to the core concepts of Skeleton."
+    ],
+    "group": "Get Started",
+    "url": "https://www.skeleton.dev/docs/svelte/get-started/fundamentals.md",
+    "slug": "get-started-fundamentals"
+  },
+  {
+    "title": "Core API",
+    "excerpt": [
+      "Learn about the specific features Skeleton introduces to Tailwind."
+    ],
+    "group": "Get Started",
+    "url": "https://www.skeleton.dev/docs/svelte/get-started/core-api.md",
+    "slug": "get-started-core-api"
+  },
+  {
+    "title": "Migrate from v2",
+    "excerpt": [
+      "Learn how to migrate from Skeleton v2 to the latest release."
+    ],
+    "group": "Get Started",
+    "url": "https://www.skeleton.dev/docs/svelte/get-started/migrate-from-v2.md",
+    "slug": "get-started-migrate-from-v2"
+  },
+  {
+    "title": "Migrate from v3",
+    "excerpt": [
+      "Learn how to migrate from Skeleton v3 to the latest release."
+    ],
+    "group": "Get Started",
+    "url": "https://www.skeleton.dev/docs/svelte/get-started/migrate-from-v3.md",
+    "slug": "get-started-migrate-from-v3"
+  },
+  {
+    "title": "Dark Mode",
+    "excerpt": [
+      "Learn how to use Tailwind's dark mode feature for your Skeleton project."
+    ],
+    "group": "Guides",
+    "url": "https://www.skeleton.dev/docs/svelte/guides/mode.md",
+    "slug": "guides-dark-mode"
+  },
+  {
+    "title": "Layouts",
+    "excerpt": [
+      "Learn best practices for creating responsive layouts using semantic HTML and Tailwind."
+    ],
+    "group": "Guides",
+    "url": "https://www.skeleton.dev/docs/svelte/guides/layouts.md",
+    "slug": "guides-layouts"
+  },
+  {
+    "title": "Cookbook",
+    "excerpt": [
+      "A collection of recipes for crafting interface features that utilize Skeleton primitives."
+    ],
+    "group": "Guides",
+    "url": "https://www.skeleton.dev/docs/svelte/guides/cookbook.md",
+    "slug": "guides-cookbook"
+  },
+  {
+    "title": "Themes",
+    "excerpt": [
+      "The Skeleton theme system."
+    ],
+    "group": "Design System",
+    "url": "https://www.skeleton.dev/docs/svelte/design/themes.md",
+    "slug": "design-system-themes"
+  },
+  {
+    "title": "Colors",
+    "excerpt": [
+      "The Skeleton color system."
+    ],
+    "group": "Design System",
+    "url": "https://www.skeleton.dev/docs/svelte/design/colors.md",
+    "slug": "design-system-colors"
+  },
+  {
+    "title": "Presets",
+    "excerpt": [
+      "Canned styles for your interface elements."
+    ],
+    "group": "Design System",
+    "url": "https://www.skeleton.dev/docs/svelte/design/presets.md",
+    "slug": "design-system-presets"
+  },
+  {
+    "title": "Typography",
+    "excerpt": [
+      "The Skeleton typography system."
+    ],
+    "group": "Design System",
+    "url": "https://www.skeleton.dev/docs/svelte/design/typography.md",
+    "slug": "design-system-typography"
+  },
+  {
+    "title": "Spacing",
+    "excerpt": [
+      "Set a dynamic scale for application whitespace."
+    ],
+    "group": "Design System",
+    "url": "https://www.skeleton.dev/docs/svelte/design/spacing.md",
+    "slug": "design-system-spacing"
+  },
+  {
+    "title": "Iconography",
+    "excerpt": [
+      "Learn how to integrate Lucide for iconography in Skeleton."
+    ],
+    "group": "Design System",
+    "url": "https://www.skeleton.dev/docs/svelte/design/iconography.md",
+    "slug": "design-system-iconography"
+  },
+  {
+    "title": "Badges",
+    "excerpt": [
+      "Provides a robust set of non-interactive badge styles."
+    ],
+    "group": "Tailwind Components",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/badges.md",
+    "slug": "tailwind-components-badges"
+  },
+  {
+    "title": "Buttons",
+    "excerpt": [
+      "Provide a variety of button, including customizable sizes and types."
+    ],
+    "group": "Tailwind Components",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/buttons.md",
+    "slug": "tailwind-components-buttons"
+  },
+  {
+    "title": "Cards",
+    "excerpt": [
+      "Provides container elements that wrap and separate content."
+    ],
+    "group": "Tailwind Components",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/cards.md",
+    "slug": "tailwind-components-cards"
+  },
+  {
+    "title": "Chips",
+    "excerpt": [
+      "Provides a robust set of interactive chip styles."
+    ],
+    "group": "Tailwind Components",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/chips.md",
+    "slug": "tailwind-components-chips"
+  },
+  {
+    "title": "Dividers",
+    "excerpt": [
+      "Horizontal and vertical rule styling."
+    ],
+    "group": "Tailwind Components",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/dividers.md",
+    "slug": "tailwind-components-dividers"
+  },
+  {
+    "title": "Forms and Inputs",
+    "excerpt": [
+      "Various form and input styles."
+    ],
+    "group": "Tailwind Components",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/forms.md",
+    "slug": "tailwind-components-forms-and-inputs"
+  },
+  {
+    "title": "Placeholders",
+    "excerpt": [
+      "Provides \"skeleton\" placeholders that can display while content loads."
+    ],
+    "group": "Tailwind Components",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/placeholders.md",
+    "slug": "tailwind-components-placeholders"
+  },
+  {
+    "title": "Tables",
+    "excerpt": [
+      "Provides a set of styles for native HTML table elements."
+    ],
+    "group": "Tailwind Components",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/tables.md",
+    "slug": "tailwind-components-tables"
+  },
+  {
+    "title": "Accordion",
+    "excerpt": [
+      "Divide content into collapsible sections."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/accordion.md",
+    "slug": "framework-components-accordion"
+  },
+  {
+    "title": "App Bar",
+    "excerpt": [
+      "A header element for the top of your page layout."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/app-bar.md",
+    "slug": "framework-components-app-bar"
+  },
+  {
+    "title": "Avatar",
+    "excerpt": [
+      "An image with a fallback for representing the user."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/avatar.md",
+    "slug": "framework-components-avatar"
+  },
+  {
+    "title": "Carousel",
+    "excerpt": [
+      "Navigate through a collection of slides with controls and indicators."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/carousel.md",
+    "slug": "framework-components-carousel"
+  },
+  {
+    "title": "Collapsible",
+    "excerpt": [
+      "A container that can be expanded or collapsed to show or hide content."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/collapsible.md",
+    "slug": "framework-components-collapsible"
+  },
+  {
+    "title": "Combobox",
+    "excerpt": [
+      "A combobox is an input widget with an associated popup that enables users to select a value from a collection of possible values."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/combobox.md",
+    "slug": "framework-components-combobox"
+  },
+  {
+    "title": "Date Picker",
+    "excerpt": [
+      "Select dates from a calendar interface."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/date-picker.md",
+    "slug": "framework-components-date-picker"
+  },
+  {
+    "title": "Dialog",
+    "excerpt": [
+      "A modal dialog for displaying content and actions."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/dialog.md",
+    "slug": "framework-components-dialog"
+  },
+  {
+    "title": "File Upload",
+    "excerpt": [
+      "File upload dropzone and input patterns for selecting files."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/file-upload.md",
+    "slug": "framework-components-file-upload"
+  },
+  {
+    "title": "Floating Panel",
+    "excerpt": [
+      "A draggable, resizable floating panel with minimize/maximize controls."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/floating-panel.md",
+    "slug": "framework-components-floating-panel"
+  },
+  {
+    "title": "Listbox",
+    "excerpt": [
+      "Accessible listbox for single and multi selection."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/listbox.md",
+    "slug": "framework-components-listbox"
+  },
+  {
+    "title": "Menu",
+    "excerpt": [
+      "Accessible dropdown and context menus for actions and navigation."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/menu.md",
+    "slug": "framework-components-menu"
+  },
+  {
+    "title": "Navigation",
+    "excerpt": [
+      "Navigation patterns for apps (bar, rail, sidebar, toggle)."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/navigation.md",
+    "slug": "framework-components-navigation"
+  },
+  {
+    "title": "Pagination",
+    "excerpt": [
+      "Client and server-side pagination controls."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/pagination.md",
+    "slug": "framework-components-pagination"
+  },
+  {
+    "title": "Popover",
+    "excerpt": [
+      "Small overlay panels positioned relative to a trigger."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/popover.md",
+    "slug": "framework-components-popover"
+  },
+  {
+    "title": "Portal",
+    "excerpt": [
+      "Renders children into a DOM node that exists outside the DOM hierarchy."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/portal.md",
+    "slug": "framework-components-portal"
+  },
+  {
+    "title": "Progress - Circular",
+    "excerpt": [
+      "Circular progress indicators for showing task progress."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/progress-circular.md",
+    "slug": "framework-components-progress-circular"
+  },
+  {
+    "title": "Progress - Linear",
+    "excerpt": [
+      "An indicator showing the progress or completion of a task."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/progress-linear.md",
+    "slug": "framework-components-progress-linear"
+  },
+  {
+    "title": "Rating Group",
+    "excerpt": [
+      "Rating Group allows users to rate something"
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/rating-group.md",
+    "slug": "framework-components-rating-group"
+  },
+  {
+    "title": "Segmented Control",
+    "excerpt": [
+      "Capture input for a limited set of options."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/segmented-control.md",
+    "slug": "framework-components-segmented-control"
+  },
+  {
+    "title": "Slider",
+    "excerpt": [
+      "Capture input from a range of values."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/slider.md",
+    "slug": "framework-components-slider"
+  },
+  {
+    "title": "Steps",
+    "excerpt": [
+      "Use steps to guide users through a multi-step process."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/steps.md",
+    "slug": "framework-components-steps"
+  },
+  {
+    "title": "Switch",
+    "excerpt": [
+      "Toggle between two states, such as on/off."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/switch.md",
+    "slug": "framework-components-switch"
+  },
+  {
+    "title": "Tabs",
+    "excerpt": [
+      "Use tabs to quickly switch between different views and pages."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/tabs.md",
+    "slug": "framework-components-tabs"
+  },
+  {
+    "title": "Tags Input",
+    "excerpt": [
+      "Allows input of multiple values."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/tags-input.md",
+    "slug": "framework-components-tags-input"
+  },
+  {
+    "title": "Toast",
+    "excerpt": [
+      "Display brief messages to users."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/toast.md",
+    "slug": "framework-components-toast"
+  },
+  {
+    "title": "Toggle Group",
+    "excerpt": [
+      "Grouped buttons for toggling option states."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/toggle-group.md",
+    "slug": "framework-components-toggle-group"
+  },
+  {
+    "title": "Tooltip",
+    "excerpt": [
+      "A floating label that appears on hover or focus, providing additional context."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/tooltip.md",
+    "slug": "framework-components-tooltip"
+  },
+  {
+    "title": "Tree View",
+    "excerpt": [
+      "Used to display hierarchical data."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/tree-view.md",
+    "slug": "framework-components-tree-view"
+  },
+  {
+    "title": "Code Block",
+    "excerpt": [
+      "Learn how to integrate Shiki, a beautiful yet powerful syntax highlighter."
+    ],
+    "group": "Integrations",
+    "url": "https://www.skeleton.dev/docs/svelte/integrations/code-block.md",
+    "slug": "integrations-code-block"
+  },
+  {
+    "title": "Bits UI",
+    "excerpt": [
+      "Flexible, unstyled, and accessible primitives that provide the foundation for building your own high-quality Svelte component library."
+    ],
+    "group": "Integrations",
+    "url": "https://www.skeleton.dev/docs/svelte/integrations/bits-ui.md",
+    "slug": "integrations-bits-ui"
+  },
+  {
+    "title": "Melt UI",
+    "excerpt": [
+      "An open-source Svelte library for building high-quality, accessible design systems and web apps."
+    ],
+    "group": "Integrations",
+    "url": "https://www.skeleton.dev/docs/svelte/integrations/melt-ui.md",
+    "slug": "integrations-melt-ui"
+  },
+  {
+    "title": "Radix UI",
+    "excerpt": [
+      "Unstyled, accessible, open source React primitives for high-quality web apps and design systems."
+    ],
+    "group": "Integrations",
+    "url": "https://www.skeleton.dev/docs/svelte/integrations/radix-ui.md",
+    "slug": "integrations-radix-ui"
+  },
+  {
+    "title": "Contribute",
+    "excerpt": [
+      "Learn how to contribute to Skeleton."
+    ],
+    "group": "Resources",
+    "url": "https://www.skeleton.dev/docs/svelte/resources/contribute.md",
+    "slug": "resources-contribute"
+  },
+  {
+    "title": "LLMs",
+    "excerpt": [
+      "Documentation for LLMs. Beep Boop."
+    ],
+    "group": "Resources",
+    "url": "https://www.skeleton.dev/docs/svelte/resources/llms.md",
+    "slug": "resources-llms"
+  }
+]
