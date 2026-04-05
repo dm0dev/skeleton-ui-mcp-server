@@ -1,6 +1,6 @@
 """
 Pytest integrity tests for static/ data and _llms.txt format.
-Run with: uv run --group dev pytest scripts/test_audit.py -v
+Run with: uv run --group dev pytest tests/test_audit.py -v
 """
 import json
 import os
@@ -9,7 +9,7 @@ import re
 import pytest
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-STATIC_DIR = os.path.join(BASE_DIR, "static")
+STATIC_DIR = os.path.join(BASE_DIR, "skeleton_ui_mcp_server", "static")
 
 with open(os.path.join(STATIC_DIR, "_index_list.json")) as _f:
     _INDEX: list[dict] = json.load(_f)

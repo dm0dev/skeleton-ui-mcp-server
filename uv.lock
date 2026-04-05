@@ -831,7 +831,7 @@ wheels = [
 [[package]]
 name = "skeleton-ui-mcp-server"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "mcp", extra = ["cli"] },
     { name = "toon-format" },

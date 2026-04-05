@@ -1,10 +1,10 @@
 """
-Pytest smoke tests for the MCP tools in main.py.
-Run with: uv run --group dev pytest scripts/test_tools.py -v
+Pytest smoke tests for the MCP tools in skeleton_ui_mcp_server/server.py.
+Run with: uv run --group dev pytest tests/test_tools.py -v
 """
 import pytest
 
-from main import get_docs_for, list_all_docs, list_docs_by_group, search_docs
+from skeleton_ui_mcp_server.server import get_docs_for, list_all_docs, list_docs_by_group, search_docs
 
 
 class TestSearchDocs:

@@ -2,7 +2,7 @@
 
 > This project was built with the assistance of coding agents (Claude Code).
 
-An MCP server that exposes the [Skeleton UI](https://www.skeleton.dev) documentation as tools for coding agents. 
+An MCP server that exposes the [Skeleton UI](https://www.skeleton.dev) documentation as tools for coding agents.
 Documentation is served from pre-fetched static files — no live network calls during tool use.
 
 ## Tools
@@ -14,19 +14,30 @@ Documentation is served from pre-fetched static files — no live network calls 
 | `list_all_docs()`            | Full index of all 58 docs. Prefer the tools above.                                                |
 | `get_docs_for(slug)`         | Returns full Markdown documentation for a slug.                                                   |
 
-## Installation
+## Claude Desktop Configuration
 
-Requires [uv](https://docs.astral.sh/uv/).
+### Using uvx (recommended)
+
+No installation needed — `uvx` fetches and runs the package automatically:
+
+```json
+{
+  "mcpServers": {
+    "skeleton-ui-docs": {
+      "command": "uvx",
+      "args": ["skeleton-ui-mcp-server"]
+    }
+  }
+}
+```
+
+### From source
 
 ```bash
 git clone <repo>
 cd skeleton-ui-mcp-server
 uv sync
 ```
-
-## Claude Desktop Configuration
-
-Add to your `claude_desktop_config.json`:
 
 ```json
 {
@@ -37,8 +48,7 @@ Add to your `claude_desktop_config.json`:
         "--directory",
         "/absolute/path/to/skeleton-ui-mcp-server",
         "run",
-        "python",
-        "main.py"
+        "skeleton-ui-mcp-server"
       ]
     }
   }
@@ -47,13 +57,13 @@ Add to your `claude_desktop_config.json`:
 
 ## Refreshing the Static Files
 
-The `static/` directory contains pre-fetched documentation from `skeleton.dev`. To refresh it manually:
+The `skeleton_ui_mcp_server/static/` directory contains pre-fetched documentation from `skeleton.dev`. To refresh it manually:
 
 ```bash
 uv run --extra fetch python index.py
 ```
 
-This re-fetches all pages listed in `static/_llms.txt` and regenerates the individual JSON files.
+This re-fetches all pages listed in `skeleton_ui_mcp_server/static/_llms.txt` and regenerates the individual JSON files.
 
 A GitHub Actions workflow (`.github/workflows/update-static.yml`) runs this automatically every night at 03:00 UTC and commits any changes back to the repository. It can also be triggered manually via **Actions → Update static docs → Run workflow**. The integrity tests (`tests/test_audit.py`) run as part of the workflow before committing — if they fail the commit is skipped.
 
@@ -70,5 +80,5 @@ uv sync --group dev
 | `uv run --group dev pytest -v`                     | Run all tests (tool smoke tests + static integrity) |
 | `uv run --group dev pytest tests/test_tools.py -v` | MCP tool tests only                                 |
 | `uv run --group dev pytest tests/test_audit.py -v` | Static data + `_llms.txt` format tests only         |
-| `uv run --group dev pyright`                       | Type-check `main.py` and `index.py`                 |
+| `uv run --group dev pyright`                       | Type-check `server.py` and `index.py`               |
 | `uv run --group dev pip-audit`                     | Scan dependencies for known vulnerabilities         |

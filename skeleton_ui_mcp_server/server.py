@@ -1,15 +1,16 @@
 import json
-from os.path import dirname
+from pathlib import Path
 
 import toon_format
 
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("skeleton-ui-docs")
-BASE_DIR = dirname(__file__)
+BASE_DIR = Path(__file__).parent
+
 
 def _load_index() -> list:
-    with open(f"{BASE_DIR}/static/_index_list.json") as f:
+    with open(BASE_DIR / "static" / "_index_list.json") as f:
         return json.load(f)
 
 
@@ -88,7 +89,7 @@ async def get_docs_for(slug: str) -> str:
     "design-system-themes", "tailwind-components-buttons".
     """
     try:
-        with open(f"{BASE_DIR}/static/{slug}.json") as f:
+        with open(BASE_DIR / "static" / f"{slug}.json") as f:
             j = json.load(f)
     except FileNotFoundError:
         return toon_format.encode({
@@ -100,5 +101,9 @@ async def get_docs_for(slug: str) -> str:
     return frontmatter + j["content"]
 
 
-if __name__ == "__main__":
+def run() -> None:
     mcp.run()
+
+
+if __name__ == "__main__":
+    run()
