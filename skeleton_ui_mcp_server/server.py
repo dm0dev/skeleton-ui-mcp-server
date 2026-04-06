@@ -1,8 +1,6 @@
 import json
 from pathlib import Path
 
-import toon_format
-
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("skeleton-ui-docs")
@@ -48,8 +46,8 @@ async def search_docs(query: str, limit: int = 5) -> str:
         for _, e in scored[:cap]
     ]
     if not results:
-        return toon_format.encode({"message": "No results found", "query": query})
-    return toon_format.encode(results)
+        return json.dumps({"message": "No results found", "query": query}, ensure_ascii=False)
+    return json.dumps(results, ensure_ascii=False)
 
 
 @mcp.tool()
@@ -61,13 +59,13 @@ async def list_docs_by_group(group: str) -> str:
     Use this to browse all options in a category rather than searching by keyword.
     """
     if group not in VALID_GROUPS:
-        return toon_format.encode({"error": "Invalid group", "valid_groups": VALID_GROUPS})
+        return json.dumps({"error": "Invalid group", "valid_groups": VALID_GROUPS}, ensure_ascii=False)
     index = _load_index()
     results = [
         {"slug": e["slug"], "title": e["title"], "excerpt": e["excerpt"]}
         for e in index if e["group"] == group
     ]
-    return toon_format.encode(results)
+    return json.dumps(results, ensure_ascii=False)
 
 
 @mcp.tool()
@@ -77,7 +75,7 @@ async def list_all_docs() -> str:
     Prefer search_docs for keyword lookup or list_docs_by_group to browse a category.
     Use this only when you need a complete index of all available documentation.
     """
-    return toon_format.encode(_load_index())
+    return json.dumps(_load_index(), ensure_ascii=False)
 
 
 @mcp.tool()
@@ -92,11 +90,11 @@ async def get_docs_for(slug: str) -> str:
         with open(BASE_DIR / "static" / f"{slug}.json") as f:
             j = json.load(f)
     except FileNotFoundError:
-        return toon_format.encode({
+        return json.dumps({
             "error": "Unknown slug",
             "slug": slug,
             "hint": "Call search_docs or list_docs_by_group to find valid slugs.",
-        })
+        }, ensure_ascii=False)
     frontmatter = f"---\ntitle: {j['title']}\ngroup: {j['group']}\nurl: {j['url']}\n---\n\n"
     return frontmatter + j["content"]
 
