@@ -1,35 +1,10 @@
 import json
-import threading
-import urllib.request
-from importlib.metadata import version
 from pathlib import Path
 
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("skeleton-ui-docs")
 BASE_DIR = Path(__file__).parent
-
-CURRENT_VERSION = version("skeleton-ui-mcp-server")
-_UPDATE_NOTICE: str = ""
-
-
-def _check_for_update() -> None:
-    global _UPDATE_NOTICE
-    try:
-        url = "https://pypi.org/pypi/skeleton-ui-mcp-server/json"
-        with urllib.request.urlopen(url, timeout=3) as r:
-            latest = json.load(r)["info"]["version"]
-        if latest != CURRENT_VERSION:
-            _UPDATE_NOTICE = (
-                f"[NOTICE: skeleton-ui-mcp-server {latest} is available "
-                f"(you have {CURRENT_VERSION}). "
-                f"Run `uvx --reinstall skeleton-ui-mcp-server` to update.]\n\n"
-            )
-    except Exception:
-        pass
-
-
-threading.Thread(target=_check_for_update, daemon=True).start()
 
 
 def _load_index() -> list:
@@ -71,8 +46,8 @@ async def search_docs(query: str, limit: int = 5) -> str:
         for _, e in scored[:cap]
     ]
     if not results:
-        return _UPDATE_NOTICE + json.dumps({"message": "No results found", "query": query}, ensure_ascii=False)
-    return _UPDATE_NOTICE + json.dumps(results, ensure_ascii=False)
+        return json.dumps({"message": "No results found", "query": query}, ensure_ascii=False)
+    return json.dumps(results, ensure_ascii=False)
 
 
 @mcp.tool()
@@ -84,13 +59,13 @@ async def list_docs_by_group(group: str) -> str:
     Use this to browse all options in a category rather than searching by keyword.
     """
     if group not in VALID_GROUPS:
-        return _UPDATE_NOTICE + json.dumps({"error": "Invalid group", "valid_groups": VALID_GROUPS}, ensure_ascii=False)
+        return json.dumps({"error": "Invalid group", "valid_groups": VALID_GROUPS}, ensure_ascii=False)
     index = _load_index()
     results = [
         {"slug": e["slug"], "title": e["title"], "excerpt": e["excerpt"]}
         for e in index if e["group"] == group
     ]
-    return _UPDATE_NOTICE + json.dumps(results, ensure_ascii=False)
+    return json.dumps(results, ensure_ascii=False)
 
 
 @mcp.tool()
@@ -100,7 +75,7 @@ async def list_all_docs() -> str:
     Prefer search_docs for keyword lookup or list_docs_by_group to browse a category.
     Use this only when you need a complete index of all available documentation.
     """
-    return _UPDATE_NOTICE + json.dumps(_load_index(), ensure_ascii=False)
+    return json.dumps(_load_index(), ensure_ascii=False)
 
 
 @mcp.tool()
@@ -115,13 +90,13 @@ async def get_docs_for(slug: str) -> str:
         with open(BASE_DIR / "static" / f"{slug}.json") as f:
             j = json.load(f)
     except FileNotFoundError:
-        return _UPDATE_NOTICE + json.dumps({
+        return json.dumps({
             "error": "Unknown slug",
             "slug": slug,
             "hint": "Call search_docs or list_docs_by_group to find valid slugs.",
         }, ensure_ascii=False)
     frontmatter = f"---\ntitle: {j['title']}\ngroup: {j['group']}\nurl: {j['url']}\n---\n\n"
-    return _UPDATE_NOTICE + frontmatter + j["content"]
+    return frontmatter + j["content"]
 
 
 def run() -> None:

@@ -28,7 +28,7 @@ No installation needed — `uvx` fetches and runs the package automatically:
   "mcpServers": {
     "skeleton-ui-docs": {
       "command": "uvx",
-      "args": ["skeleton-ui-mcp-server"]
+      "args": ["skeleton-ui-mcp-server@latest"]
     }
   }
 }
