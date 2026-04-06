@@ -2,6 +2,9 @@
 
 > This project was built with the assistance of coding agents (Claude Code).
 
+> [!WARNING]
+> **Svelte only.** This MCP server currently covers the Svelte version of Skeleton UI exclusively. React and other framework variants are not included yet.
+
 An MCP server that exposes the [Skeleton UI](https://www.skeleton.dev) documentation as tools for coding agents.
 Documentation is served from pre-fetched static files — no live network calls during tool use.
 
