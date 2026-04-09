@@ -2,5 +2,15 @@
   "url": "https://www.skeleton.dev/docs/svelte/resources/contribute.md",
   "content": "# Contribute\n\nLearn how to contribute to Skeleton.\n\n<NavigationGrid filter={(doc) => doc.id.includes('resources/contribute/')} />\n",
   "title": "Contribute",
-  "group": "Resources"
+  "group": "Resources",
+  "outline": [
+    {
+      "heading": "Contribute",
+      "level": 1
+    }
+  ],
+  "examples": [],
+  "sections": {
+    "Contribute": "# Contribute\n\nLearn how to contribute to Skeleton.\n\n<NavigationGrid filter={(doc) => doc.id.includes('resources/contribute/')} />"
+  }
 }

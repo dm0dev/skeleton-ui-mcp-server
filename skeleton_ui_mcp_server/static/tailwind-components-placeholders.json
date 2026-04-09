@@ -2,5 +2,20 @@
   "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/placeholders.md",
   "content": "# Placeholders\n\nProvides \"skeleton\" placeholders that can display while content loads.\n\n```astro\n<div class=\"w-full space-y-4\">\n\t<div class=\"flex items-center justify-between\">\n\t\t<div class=\"flex items-center justify-center space-x-4\">\n\t\t\t<div class=\"placeholder-circle size-16 animate-pulse\"></div>\n\t\t\t<div class=\"placeholder-circle size-14 animate-pulse\"></div>\n\t\t\t<div class=\"placeholder-circle size-10 animate-pulse\"></div>\n\t\t</div>\n\t</div>\n\t<div class=\"space-y-4\">\n\t\t<div class=\"placeholder animate-pulse\"></div>\n\t\t<div class=\"grid grid-cols-4 gap-4\">\n\t\t\t<div class=\"placeholder animate-pulse\"></div>\n\t\t\t<div class=\"placeholder animate-pulse\"></div>\n\t\t\t<div class=\"placeholder animate-pulse\"></div>\n\t\t\t<div class=\"placeholder animate-pulse\"></div>\n\t\t</div>\n\t\t<div class=\"placeholder animate-pulse\"></div>\n\t\t<div class=\"placeholder animate-pulse\"></div>\n\t</div>\n</div>\n\n```\n\n## Animated\n\n```html\n<div class=\"placeholder animate-pulse\">...</div>\n```\n",
   "title": "Placeholders",
-  "group": "Tailwind Components"
+  "group": "Tailwind Components",
+  "outline": [
+    {
+      "heading": "Placeholders",
+      "level": 1
+    },
+    {
+      "heading": "Animated",
+      "level": 2
+    }
+  ],
+  "examples": [],
+  "sections": {
+    "Placeholders": "# Placeholders\n\nProvides \"skeleton\" placeholders that can display while content loads.\n\n```astro\n<div class=\"w-full space-y-4\">\n\t<div class=\"flex items-center justify-between\">\n\t\t<div class=\"flex items-center justify-center space-x-4\">\n\t\t\t<div class=\"placeholder-circle size-16 animate-pulse\"></div>\n\t\t\t<div class=\"placeholder-circle size-14 animate-pulse\"></div>\n\t\t\t<div class=\"placeholder-circle size-10 animate-pulse\"></div>\n\t\t</div>\n\t</div>\n\t<div class=\"space-y-4\">\n\t\t<div class=\"placeholder animate-pulse\"></div>\n\t\t<div class=\"grid grid-cols-4 gap-4\">\n\t\t\t<div class=\"placeholder animate-pulse\"></div>\n\t\t\t<div class=\"placeholder animate-pulse\"></div>\n\t\t\t<div class=\"placeholder animate-pulse\"></div>\n\t\t\t<div class=\"placeholder animate-pulse\"></div>\n\t\t</div>\n\t\t<div class=\"placeholder animate-pulse\"></div>\n\t\t<div class=\"placeholder animate-pulse\"></div>\n\t</div>\n</div>\n\n```",
+    "Animated": "## Animated\n\n```html\n<div class=\"placeholder animate-pulse\">...</div>\n```"
+  }
 }

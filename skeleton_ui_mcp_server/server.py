@@ -99,6 +99,72 @@ async def get_docs_for(slug: str) -> str:
     return frontmatter + j["content"]
 
 
+@mcp.tool()
+async def get_component_examples(slug: str) -> str:
+    """
+    Extract only the svelte code blocks from the documentation for a given slug.
+    Developers often only need the copy-pasteable boilerplate.
+    """
+    try:
+        with open(BASE_DIR / "static" / f"{slug}.json") as f:
+            j = json.load(f)
+    except FileNotFoundError:
+        return json.dumps({
+            "error": "Unknown slug",
+            "slug": slug,
+            "hint": "Call search_docs or list_docs_by_group to find valid slugs.",
+        }, ensure_ascii=False)
+    
+    examples = j.get("examples", [])
+    if not examples:
+        return json.dumps({"message": "No examples found for this component."}, ensure_ascii=False)
+    
+    return json.dumps(examples, ensure_ascii=False)
+
+@mcp.tool()
+async def get_doc_section(slug: str, heading: str) -> str:
+    """
+    Instead of fetching the whole page, fetch just a specific section like "API Reference" or "Installation".
+    """
+    try:
+        with open(BASE_DIR / "static" / f"{slug}.json") as f:
+            j = json.load(f)
+    except FileNotFoundError:
+        return json.dumps({
+            "error": "Unknown slug",
+            "slug": slug,
+            "hint": "Call search_docs or list_docs_by_group to find valid slugs.",
+        }, ensure_ascii=False)
+    
+    sections = j.get("sections", {})
+    if heading not in sections:
+        return json.dumps({
+            "error": "Heading not found",
+            "heading": heading,
+            "available_headings": [s["heading"] for s in j.get("outline", [])]
+        }, ensure_ascii=False)
+    
+    return sections[heading]
+
+@mcp.tool()
+async def get_doc_outline(slug: str) -> str:
+    """
+    A quick way to see the table of contents for a doc so the LLM can decide which specific section to fetch.
+    """
+    try:
+        with open(BASE_DIR / "static" / f"{slug}.json") as f:
+            j = json.load(f)
+    except FileNotFoundError:
+        return json.dumps({
+            "error": "Unknown slug",
+            "slug": slug,
+            "hint": "Call search_docs or list_docs_by_group to find valid slugs.",
+        }, ensure_ascii=False)
+    
+    outline = j.get("outline", [])
+    return json.dumps(outline, ensure_ascii=False)
+
+
 def run() -> None:
     mcp.run()
 

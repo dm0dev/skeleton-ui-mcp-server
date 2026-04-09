@@ -2,5 +2,35 @@
   "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/dividers.md",
   "content": "# Dividers\n\nHorizontal and vertical rule styling.\n\n```astro\n<div class=\"w-full space-y-4 text-center\">\n\t<p>Above the divider.</p>\n\n\t<hr class=\"hr\" />\n\n\t<p>Below the divider.</p>\n</div>\n\n```\n\n## Size\n\nUse Tailwind's [border width](https://tailwindcss.com/docs/border-width) utilities to adjust thickness.\n\n```astro\n<div class=\"w-full space-y-4\">\n\t<code class=\"inline-block code\">Default</code>\n\t<hr class=\"hr\" />\n\n\t<code class=\"inline-block code\">border-t-2</code>\n\t<hr class=\"hr border-t-2\" />\n\n\t<code class=\"inline-block code\">border-t-4</code>\n\t<hr class=\"hr border-t-4\" />\n\n\t<code class=\"inline-block code\">border-t-8</code>\n\t<hr class=\"hr border-t-8\" />\n</div>\n\n```\n\n## Style\n\nUse Tailwind's [border style](https://tailwindcss.com/docs/border-style) utilities to adjust visual style.\n\n```astro\n<div class=\"w-full space-y-4\">\n\t<code class=\"inline-block code\">border-solid</code>\n\t<hr class=\"hr border-solid\" />\n\n\t<code class=\"inline-block code\">border-dashed</code>\n\t<hr class=\"hr border-dashed\" />\n\n\t<code class=\"inline-block code\">border-dotted</code>\n\t<hr class=\"hr border-dotted\" />\n\n\t<code class=\"inline-block code\">border-double</code>\n\t<hr class=\"hr border-4 border-double\" />\n</div>\n\n```\n\n## Colors\n\nUse any Tailwind or Skeleton [colors or pairing](/docs/\\[framework]/design/colors).\n\n```astro\n<div class=\"w-full space-y-4\">\n\t<code class=\"inline-block code\">border-primary-500</code>\n\t<hr class=\"hr border-primary-500\" />\n\n\t<code class=\"inline-block code\">border-secondary-500</code>\n\t<hr class=\"hr border-secondary-500\" />\n\n\t<code class=\"inline-block code\">border-tertiary-500</code>\n\t<hr class=\"hr border-tertiary-500\" />\n\n\t<code class=\"inline-block code\">border-success-500</code>\n\t<hr class=\"hr border-success-500\" />\n\n\t<code class=\"inline-block code\">border-warning-500</code>\n\t<hr class=\"hr border-warning-500\" />\n\n\t<code class=\"inline-block code\">border-error-500</code>\n\t<hr class=\"hr border-error-500\" />\n\n\t<code class=\"inline-block code\">border-surface-950-50</code>\n\t<hr class=\"hr border-surface-950-50\" />\n</div>\n\n```\n\n## Vertical\n\nUse `vr` for a vertical rule, which supports all above styles. Make sure to set the height.\n\n```astro\n<div class=\"grid h-20 grid-cols-[auto_auto_auto_auto_auto_auto] items-center gap-4\">\n\t<span><code class=\"code\">Default</code> &rarr;</span>\n\n\t<span class=\"vr\"></span>\n\t<span class=\"vr border-l-2\"></span>\n\t<span class=\"vr border-l-4\"></span>\n\t<span class=\"vr border-l-8\"></span>\n\n\t<span>&larr; <code class=\"code\">border-l-8</code></span>\n</div>\n\n```\n",
   "title": "Dividers",
-  "group": "Tailwind Components"
+  "group": "Tailwind Components",
+  "outline": [
+    {
+      "heading": "Dividers",
+      "level": 1
+    },
+    {
+      "heading": "Size",
+      "level": 2
+    },
+    {
+      "heading": "Style",
+      "level": 2
+    },
+    {
+      "heading": "Colors",
+      "level": 2
+    },
+    {
+      "heading": "Vertical",
+      "level": 2
+    }
+  ],
+  "examples": [],
+  "sections": {
+    "Dividers": "# Dividers\n\nHorizontal and vertical rule styling.\n\n```astro\n<div class=\"w-full space-y-4 text-center\">\n\t<p>Above the divider.</p>\n\n\t<hr class=\"hr\" />\n\n\t<p>Below the divider.</p>\n</div>\n\n```",
+    "Size": "## Size\n\nUse Tailwind's [border width](https://tailwindcss.com/docs/border-width) utilities to adjust thickness.\n\n```astro\n<div class=\"w-full space-y-4\">\n\t<code class=\"inline-block code\">Default</code>\n\t<hr class=\"hr\" />\n\n\t<code class=\"inline-block code\">border-t-2</code>\n\t<hr class=\"hr border-t-2\" />\n\n\t<code class=\"inline-block code\">border-t-4</code>\n\t<hr class=\"hr border-t-4\" />\n\n\t<code class=\"inline-block code\">border-t-8</code>\n\t<hr class=\"hr border-t-8\" />\n</div>\n\n```",
+    "Style": "## Style\n\nUse Tailwind's [border style](https://tailwindcss.com/docs/border-style) utilities to adjust visual style.\n\n```astro\n<div class=\"w-full space-y-4\">\n\t<code class=\"inline-block code\">border-solid</code>\n\t<hr class=\"hr border-solid\" />\n\n\t<code class=\"inline-block code\">border-dashed</code>\n\t<hr class=\"hr border-dashed\" />\n\n\t<code class=\"inline-block code\">border-dotted</code>\n\t<hr class=\"hr border-dotted\" />\n\n\t<code class=\"inline-block code\">border-double</code>\n\t<hr class=\"hr border-4 border-double\" />\n</div>\n\n```",
+    "Colors": "## Colors\n\nUse any Tailwind or Skeleton [colors or pairing](/docs/\\[framework]/design/colors).\n\n```astro\n<div class=\"w-full space-y-4\">\n\t<code class=\"inline-block code\">border-primary-500</code>\n\t<hr class=\"hr border-primary-500\" />\n\n\t<code class=\"inline-block code\">border-secondary-500</code>\n\t<hr class=\"hr border-secondary-500\" />\n\n\t<code class=\"inline-block code\">border-tertiary-500</code>\n\t<hr class=\"hr border-tertiary-500\" />\n\n\t<code class=\"inline-block code\">border-success-500</code>\n\t<hr class=\"hr border-success-500\" />\n\n\t<code class=\"inline-block code\">border-warning-500</code>\n\t<hr class=\"hr border-warning-500\" />\n\n\t<code class=\"inline-block code\">border-error-500</code>\n\t<hr class=\"hr border-error-500\" />\n\n\t<code class=\"inline-block code\">border-surface-950-50</code>\n\t<hr class=\"hr border-surface-950-50\" />\n</div>\n\n```",
+    "Vertical": "## Vertical\n\nUse `vr` for a vertical rule, which supports all above styles. Make sure to set the height.\n\n```astro\n<div class=\"grid h-20 grid-cols-[auto_auto_auto_auto_auto_auto] items-center gap-4\">\n\t<span><code class=\"code\">Default</code> &rarr;</span>\n\n\t<span class=\"vr\"></span>\n\t<span class=\"vr border-l-2\"></span>\n\t<span class=\"vr border-l-4\"></span>\n\t<span class=\"vr border-l-8\"></span>\n\n\t<span>&larr; <code class=\"code\">border-l-8</code></span>\n</div>\n\n```"
+  }
 }

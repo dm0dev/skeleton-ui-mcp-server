@@ -2,5 +2,64 @@
   "url": "https://www.skeleton.dev/docs/svelte/framework-components/avatar.md",
   "content": "# Avatar\n\nAn image with a fallback for representing the user.\n\n```svelte\n<script lang=\"ts\">\n\timport { Avatar } from '@skeletonlabs/skeleton-svelte';\n</script>\n\n<div class=\"flex items-center gap-8\">\n\t<!-- Small -->\n\t<Avatar class=\"size-10\">\n\t\t<Avatar.Image src=\"https://i.pravatar.cc/40?img=48\" alt=\"small\" />\n\t\t<Avatar.Fallback>SK</Avatar.Fallback>\n\t</Avatar>\n\t<!-- Base -->\n\t<Avatar>\n\t\t<Avatar.Image src=\"https://i.pravatar.cc/60?img=48\" alt=\"base\" />\n\t\t<Avatar.Fallback>SK</Avatar.Fallback>\n\t</Avatar>\n\t<!-- Large -->\n\t<Avatar class=\"size-20\">\n\t\t<Avatar.Image src=\"https://i.pravatar.cc/80?img=48\" alt=\"large\" />\n\t\t<Avatar.Fallback>SK</Avatar.Fallback>\n\t</Avatar>\n</div>\n\n```\n\n## Fallback\n\nUse a fallback when an image fails to load or is unavailable.\n\n```svelte\n<script lang=\"ts\">\n\timport { Avatar } from '@skeletonlabs/skeleton-svelte';\n</script>\n\n<Avatar>\n\t<Avatar.Fallback>SK</Avatar.Fallback>\n</Avatar>\n\n```\n\n## Filter\n\nApply [SVG Filters](/docs/\\[framework]/guides/cookbook/svg-filters) to avatar images.\n\n```svelte\n<script lang=\"ts\">\n\timport { Avatar } from '@skeletonlabs/skeleton-svelte';\n</script>\n\n<Avatar>\n\t<Avatar.Image src=\"https://i.pravatar.cc/150?img=48\" class=\"filter-[url(#apollo)]\" alt=\"filtered\" />\n\t<Avatar.Fallback>SK</Avatar.Fallback>\n</Avatar>\n\n<svg class=\"absolute -left-full w-0 h-0\">\n\t<filter id=\"apollo\" filterUnits=\"objectBoundingBox\" primitiveUnits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n\t\t<feColorMatrix\n\t\t\tvalues=\"0.8 0.6 -0.4 0.1 0,\n    0 1.2 0.05 0 0,\n    0 -1 3 0.02 0,\n    0 0 0 50 0\"\n\t\t\tresult=\"final\"\n\t\t\tin=\"SourceGraphic\"\n\t\t></feColorMatrix>\n\t</filter>\n</svg>\n\n```\n\n## Anatomy\n\nHere's an overview of how the Avatar component is structured in code:\n\n```svelte\n<script lang=\"ts\">\n\timport { Avatar } from '@skeletonlabs/skeleton-svelte';\n</script>\n\n<Avatar>\n\t<Avatar.Image />\n\t<Avatar.Fallback />\n</Avatar>\n```\n\n## API Reference\n\n### Root\n\n| Prop           | Description                                                                                | Type                                                                       | Default |\n| -------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- | ------- |\n| onStatusChange | Functional called when the image loading status changes.                                   | ((details: StatusChangeDetails) => void) \\| undefined                      | -       |\n| ids            | The ids of the elements in the avatar. Useful for composition.                             | Partial\\<\\{ root: string; image: string; fallback: string; }> \\| undefined | -       |\n| getRootNode    | A root node to correctly resolve document in custom environments. E.x.: Iframes, Electron. | (() => ShadowRoot \\| Node \\| Document) \\| undefined                        | -       |\n| dir            | The document's text/writing direction.                                                     | \"ltr\" \\| \"rtl\" \\| undefined                                                | \"ltr\"   |\n| element        | Render the element yourself                                                                | Snippet\\<\\[HTMLAttributes\\<\"div\">]> \\| undefined                           | -       |\n\n### Provider\n\n| Prop    | Description                 | Type                                             | Default |\n| ------- | --------------------------- | ------------------------------------------------ | ------- |\n| value   | -                           | () => AvatarApi\\<PropTypes>                      | -       |\n| element | Render the element yourself | Snippet\\<\\[HTMLAttributes\\<\"div\">]> \\| undefined | -       |\n\n### Context\n\n| Prop     | Description | Type                                     | Default |\n| -------- | ----------- | ---------------------------------------- | ------- |\n| children | -           | Snippet\\<\\[() => AvatarApi\\<PropTypes>]> | -       |\n\n### Image\n\n| Prop    | Description                 | Type                                             | Default |\n| ------- | --------------------------- | ------------------------------------------------ | ------- |\n| element | Render the element yourself | Snippet\\<\\[HTMLAttributes\\<\"img\">]> \\| undefined | -       |\n\n### Fallback\n\n| Prop    | Description                 | Type                                              | Default |\n| ------- | --------------------------- | ------------------------------------------------- | ------- |\n| element | Render the element yourself | Snippet\\<\\[HTMLAttributes\\<\"span\">]> \\| undefined | -       |\n",
   "title": "Avatar",
-  "group": "Framework Components"
+  "group": "Framework Components",
+  "outline": [
+    {
+      "heading": "Avatar",
+      "level": 1
+    },
+    {
+      "heading": "Fallback",
+      "level": 2
+    },
+    {
+      "heading": "Filter",
+      "level": 2
+    },
+    {
+      "heading": "Anatomy",
+      "level": 2
+    },
+    {
+      "heading": "API Reference",
+      "level": 2
+    },
+    {
+      "heading": "Root",
+      "level": 3
+    },
+    {
+      "heading": "Provider",
+      "level": 3
+    },
+    {
+      "heading": "Context",
+      "level": 3
+    },
+    {
+      "heading": "Image",
+      "level": 3
+    },
+    {
+      "heading": "Fallback",
+      "level": 3
+    }
+  ],
+  "examples": [
+    "<script lang=\"ts\">\n\timport { Avatar } from '@skeletonlabs/skeleton-svelte';\n</script>\n\n<div class=\"flex items-center gap-8\">\n\t<!-- Small -->\n\t<Avatar class=\"size-10\">\n\t\t<Avatar.Image src=\"https://i.pravatar.cc/40?img=48\" alt=\"small\" />\n\t\t<Avatar.Fallback>SK</Avatar.Fallback>\n\t</Avatar>\n\t<!-- Base -->\n\t<Avatar>\n\t\t<Avatar.Image src=\"https://i.pravatar.cc/60?img=48\" alt=\"base\" />\n\t\t<Avatar.Fallback>SK</Avatar.Fallback>\n\t</Avatar>\n\t<!-- Large -->\n\t<Avatar class=\"size-20\">\n\t\t<Avatar.Image src=\"https://i.pravatar.cc/80?img=48\" alt=\"large\" />\n\t\t<Avatar.Fallback>SK</Avatar.Fallback>\n\t</Avatar>\n</div>\n",
+    "<script lang=\"ts\">\n\timport { Avatar } from '@skeletonlabs/skeleton-svelte';\n</script>\n\n<Avatar>\n\t<Avatar.Fallback>SK</Avatar.Fallback>\n</Avatar>\n",
+    "<script lang=\"ts\">\n\timport { Avatar } from '@skeletonlabs/skeleton-svelte';\n</script>\n\n<Avatar>\n\t<Avatar.Image src=\"https://i.pravatar.cc/150?img=48\" class=\"filter-[url(#apollo)]\" alt=\"filtered\" />\n\t<Avatar.Fallback>SK</Avatar.Fallback>\n</Avatar>\n\n<svg class=\"absolute -left-full w-0 h-0\">\n\t<filter id=\"apollo\" filterUnits=\"objectBoundingBox\" primitiveUnits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n\t\t<feColorMatrix\n\t\t\tvalues=\"0.8 0.6 -0.4 0.1 0,\n    0 1.2 0.05 0 0,\n    0 -1 3 0.02 0,\n    0 0 0 50 0\"\n\t\t\tresult=\"final\"\n\t\t\tin=\"SourceGraphic\"\n\t\t></feColorMatrix>\n\t</filter>\n</svg>\n",
+    "<script lang=\"ts\">\n\timport { Avatar } from '@skeletonlabs/skeleton-svelte';\n</script>\n\n<Avatar>\n\t<Avatar.Image />\n\t<Avatar.Fallback />\n</Avatar>"
+  ],
+  "sections": {
+    "Avatar": "# Avatar\n\nAn image with a fallback for representing the user.\n\n```svelte\n<script lang=\"ts\">\n\timport { Avatar } from '@skeletonlabs/skeleton-svelte';\n</script>\n\n<div class=\"flex items-center gap-8\">\n\t<!-- Small -->\n\t<Avatar class=\"size-10\">\n\t\t<Avatar.Image src=\"https://i.pravatar.cc/40?img=48\" alt=\"small\" />\n\t\t<Avatar.Fallback>SK</Avatar.Fallback>\n\t</Avatar>\n\t<!-- Base -->\n\t<Avatar>\n\t\t<Avatar.Image src=\"https://i.pravatar.cc/60?img=48\" alt=\"base\" />\n\t\t<Avatar.Fallback>SK</Avatar.Fallback>\n\t</Avatar>\n\t<!-- Large -->\n\t<Avatar class=\"size-20\">\n\t\t<Avatar.Image src=\"https://i.pravatar.cc/80?img=48\" alt=\"large\" />\n\t\t<Avatar.Fallback>SK</Avatar.Fallback>\n\t</Avatar>\n</div>\n\n```",
+    "Fallback": "### Fallback\n\n| Prop    | Description                 | Type                                              | Default |\n| ------- | --------------------------- | ------------------------------------------------- | ------- |\n| element | Render the element yourself | Snippet\\<\\[HTMLAttributes\\<\"span\">]> \\| undefined | -       |",
+    "Filter": "## Filter\n\nApply [SVG Filters](/docs/\\[framework]/guides/cookbook/svg-filters) to avatar images.\n\n```svelte\n<script lang=\"ts\">\n\timport { Avatar } from '@skeletonlabs/skeleton-svelte';\n</script>\n\n<Avatar>\n\t<Avatar.Image src=\"https://i.pravatar.cc/150?img=48\" class=\"filter-[url(#apollo)]\" alt=\"filtered\" />\n\t<Avatar.Fallback>SK</Avatar.Fallback>\n</Avatar>\n\n<svg class=\"absolute -left-full w-0 h-0\">\n\t<filter id=\"apollo\" filterUnits=\"objectBoundingBox\" primitiveUnits=\"userSpaceOnUse\" color-interpolation-filters=\"sRGB\">\n\t\t<feColorMatrix\n\t\t\tvalues=\"0.8 0.6 -0.4 0.1 0,\n    0 1.2 0.05 0 0,\n    0 -1 3 0.02 0,\n    0 0 0 50 0\"\n\t\t\tresult=\"final\"\n\t\t\tin=\"SourceGraphic\"\n\t\t></feColorMatrix>\n\t</filter>\n</svg>\n\n```",
+    "Anatomy": "## Anatomy\n\nHere's an overview of how the Avatar component is structured in code:\n\n```svelte\n<script lang=\"ts\">\n\timport { Avatar } from '@skeletonlabs/skeleton-svelte';\n</script>\n\n<Avatar>\n\t<Avatar.Image />\n\t<Avatar.Fallback />\n</Avatar>\n```",
+    "API Reference": "## API Reference",
+    "Root": "### Root\n\n| Prop           | Description                                                                                | Type                                                                       | Default |\n| -------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- | ------- |\n| onStatusChange | Functional called when the image loading status changes.                                   | ((details: StatusChangeDetails) => void) \\| undefined                      | -       |\n| ids            | The ids of the elements in the avatar. Useful for composition.                             | Partial\\<\\{ root: string; image: string; fallback: string; }> \\| undefined | -       |\n| getRootNode    | A root node to correctly resolve document in custom environments. E.x.: Iframes, Electron. | (() => ShadowRoot \\| Node \\| Document) \\| undefined                        | -       |\n| dir            | The document's text/writing direction.                                                     | \"ltr\" \\| \"rtl\" \\| undefined                                                | \"ltr\"   |\n| element        | Render the element yourself                                                                | Snippet\\<\\[HTMLAttributes\\<\"div\">]> \\| undefined                           | -       |",
+    "Provider": "### Provider\n\n| Prop    | Description                 | Type                                             | Default |\n| ------- | --------------------------- | ------------------------------------------------ | ------- |\n| value   | -                           | () => AvatarApi\\<PropTypes>                      | -       |\n| element | Render the element yourself | Snippet\\<\\[HTMLAttributes\\<\"div\">]> \\| undefined | -       |",
+    "Context": "### Context\n\n| Prop     | Description | Type                                     | Default |\n| -------- | ----------- | ---------------------------------------- | ------- |\n| children | -           | Snippet\\<\\[() => AvatarApi\\<PropTypes>]> | -       |",
+    "Image": "### Image\n\n| Prop    | Description                 | Type                                             | Default |\n| ------- | --------------------------- | ------------------------------------------------ | ------- |\n| element | Render the element yourself | Snippet\\<\\[HTMLAttributes\\<\"img\">]> \\| undefined | -       |"
+  }
 }

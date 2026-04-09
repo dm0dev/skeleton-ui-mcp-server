@@ -2,5 +2,25 @@
   "url": "https://www.skeleton.dev/docs/svelte/guides/cookbook.md",
   "content": "# Cookbook\n\nA collection of recipes for crafting interface features that utilize Skeleton primitives.\n\n## What's This?\n\nThe following [recipes](https://bigmedium.com/ideas/the-art-of-design-system-recipes.html) can help you augment and expand the Skeleton design system and component library.\n\n## Browse Recipes\n\n<TableCookbook />\n",
   "title": "Cookbook",
-  "group": "Guides"
+  "group": "Guides",
+  "outline": [
+    {
+      "heading": "Cookbook",
+      "level": 1
+    },
+    {
+      "heading": "What's This?",
+      "level": 2
+    },
+    {
+      "heading": "Browse Recipes",
+      "level": 2
+    }
+  ],
+  "examples": [],
+  "sections": {
+    "Cookbook": "# Cookbook\n\nA collection of recipes for crafting interface features that utilize Skeleton primitives.",
+    "What's This?": "## What's This?\n\nThe following [recipes](https://bigmedium.com/ideas/the-art-of-design-system-recipes.html) can help you augment and expand the Skeleton design system and component library.",
+    "Browse Recipes": "## Browse Recipes\n\n<TableCookbook />"
+  }
 }

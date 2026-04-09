@@ -2,5 +2,30 @@
   "url": "https://www.skeleton.dev/docs/svelte/get-started/installation.md",
   "content": "# Installation\n\nLearn how to install and setup Skeleton for your project.\n\n## Guides\n\n<NavigationGrid filter={(doc) => doc.id.includes('installation/')} class=\"md:grid-cols-2\" />\n\n## Mixing UI Libraries\n\nSkeleton's design system is perfect for complementing headless component libraries, such as [Bits UI](/docs/\\[framework]/integrations/bits-ui), [Melt UI](/docs/\\[framework]/integrations/melt-ui), [Radix](/docs/\\[framework]/integrations/radix-ui), and [Zag.js](https://zagjs.com/). As well as \"Tailwind component\" libraries such as the [Tailwind Plus](https://tailwindcss.com/plus). Supporting any component system that supports Tailwind, but very specifically allows you to insert or substitute Skeleton-provided utility classes.\n\n### Unsupported Libraries\n\nUnfortunately, Skeleton cannot integrate with [Flowbite React](https://flowbite-react.com/), [Flowbite Svelte](https://flowbite-svelte.com/), or [Daisy UI](https://daisyui.com/) at this time. Similar to Skeleton, these libraries make changes to Tailwind that directly overlaps with many of our core features, including class names and color values.\n",
   "title": "Installation",
-  "group": "Get Started"
+  "group": "Get Started",
+  "outline": [
+    {
+      "heading": "Installation",
+      "level": 1
+    },
+    {
+      "heading": "Guides",
+      "level": 2
+    },
+    {
+      "heading": "Mixing UI Libraries",
+      "level": 2
+    },
+    {
+      "heading": "Unsupported Libraries",
+      "level": 3
+    }
+  ],
+  "examples": [],
+  "sections": {
+    "Installation": "# Installation\n\nLearn how to install and setup Skeleton for your project.",
+    "Guides": "## Guides\n\n<NavigationGrid filter={(doc) => doc.id.includes('installation/')} class=\"md:grid-cols-2\" />",
+    "Mixing UI Libraries": "## Mixing UI Libraries\n\nSkeleton's design system is perfect for complementing headless component libraries, such as [Bits UI](/docs/\\[framework]/integrations/bits-ui), [Melt UI](/docs/\\[framework]/integrations/melt-ui), [Radix](/docs/\\[framework]/integrations/radix-ui), and [Zag.js](https://zagjs.com/). As well as \"Tailwind component\" libraries such as the [Tailwind Plus](https://tailwindcss.com/plus). Supporting any component system that supports Tailwind, but very specifically allows you to insert or substitute Skeleton-provided utility classes.",
+    "Unsupported Libraries": "### Unsupported Libraries\n\nUnfortunately, Skeleton cannot integrate with [Flowbite React](https://flowbite-react.com/), [Flowbite Svelte](https://flowbite-svelte.com/), or [Daisy UI](https://daisyui.com/) at this time. Similar to Skeleton, these libraries make changes to Tailwind that directly overlaps with many of our core features, including class names and color values."
+  }
 }
