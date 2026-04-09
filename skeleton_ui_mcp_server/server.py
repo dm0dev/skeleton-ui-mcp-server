@@ -12,7 +12,108 @@ def _load_index() -> list:
         return json.load(f)
 
 
+def _load_themes() -> dict:
+    with open(BASE_DIR / "static" / "_themes.json") as f:
+        return json.load(f)
+
+
 VALID_GROUPS: list[str] = sorted({entry["group"] for entry in _load_index()})
+
+
+@mcp.tool()
+async def list_themes() -> str:
+    """
+    List all available Skeleton UI preset themes.
+    Returns a list of theme names that can be used with get_theme_info.
+    """
+    themes = _load_themes()
+    return json.dumps(list(themes.keys()), ensure_ascii=False)
+
+
+@mcp.tool()
+async def get_theme_info(theme: str) -> str:
+    """
+    Get detailed design token information for a specific Skeleton UI theme.
+    Includes colors, fonts, border radius, and spacing.
+    """
+    themes = _load_themes()
+    if theme not in themes:
+        return json.dumps({
+            "error": "Unknown theme",
+            "theme": theme,
+            "available_themes": list(themes.keys())
+        }, ensure_ascii=False)
+    return json.dumps(themes[theme], indent=2, ensure_ascii=False)
+
+
+@mcp.tool()
+async def get_theme_guide() -> str:
+    """
+    Get guidance on where to find the currently used theme and where to place custom themes.
+    Covers both Skeleton v2 and v3 (Next) patterns.
+    """
+    guide = """
+# Skeleton UI Theme Guide
+
+## Finding the Current Theme
+
+### Skeleton v3 (Next)
+Themes are registered as Tailwind plugins in your `tailwind.config.ts` (or `tailwind.config.js`).
+Look for the `skeleton` plugin registration:
+
+```typescript
+// tailwind.config.ts
+import { skeleton } from '@skeletonlabs/skeleton/plugin';
+import * as themes from '@skeletonlabs/skeleton/themes';
+
+export default {
+    // ...
+    plugins: [
+        skeleton({
+            themes: [ themes.cerberus, themes.modern ] // Active themes listed here
+        })
+    ]
+}
+```
+
+The active theme is typically set on the `<body>` or a wrapper element via `data-theme`:
+`<body data-theme="cerberus">`
+
+### Skeleton v2 (Legacy)
+Themes are imported as CSS files, usually in your root layout: `src/routes/+layout.svelte`.
+
+```html
+<script>
+    import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
+    // ...
+</script>
+```
+
+## Custom Themes
+
+### Skeleton v3 (Next)
+Custom themes in v3 are defined as TypeScript objects. You can place them anywhere, but `src/themes.ts` is a common convention.
+
+```typescript
+// src/my-custom-theme.ts
+import type { CustomThemeConfig } from '@skeletonlabs/skeleton/plugin';
+export const myCustomTheme: CustomThemeConfig = {
+    name: 'my-custom-theme',
+    properties: {
+        // ... design tokens
+    }
+};
+```
+
+Then register it in `tailwind.config.ts`.
+
+### Skeleton v2 (Legacy)
+Custom themes in v2 are CSS files. You can generate them using the [Skeleton Theme Generator](https://www.skeleton.dev/docs/generator).
+Conventionally placed in `src/theme.css`.
+
+Import it in `src/routes/+layout.svelte` instead of a preset theme.
+"""
+    return guide
 
 
 @mcp.tool()
