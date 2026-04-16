@@ -1,9 +1,6 @@
 {
   "catppuccin": {
-    "fonts": {
-      "base": "ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri,\n\t\tsource-sans-pro, sans-serif",
-      "heading": "Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(66.37% 0.18 273.14deg)",
       "primary-contrast": "var(--color-primary-contrast-light)",
@@ -29,15 +26,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "cerberus": {
-    "fonts": {
-      "base": "system-ui",
-      "heading": "inherit"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(0.57 0.21 258.29)",
       "primary-contrast": "var(--color-primary-contrast-light)",
@@ -63,15 +56,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "concord": {
-    "fonts": {
-      "base": "system-ui, sans-serif",
-      "heading": "Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(57.74% 0.21 273.85deg)",
       "primary-contrast": "var(--color-primary-contrast-light)",
@@ -97,15 +86,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "crimson": {
-    "fonts": {
-      "base": "Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif",
-      "heading": "Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(55.71% 0.21 19.55deg)",
       "primary-contrast": "var(--color-primary-contrast-light)",
@@ -131,15 +116,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "fennec": {
-    "fonts": {
-      "base": "Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif",
-      "heading": "Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(65.88% 0.21 38.25deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -165,15 +146,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "hamlindigo": {
-    "fonts": {
-      "base": "Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif",
-      "heading": "'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(80.28% 0.08 266.51deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -199,15 +176,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "legacy": {
-    "fonts": {
-      "base": "Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif",
-      "heading": "inherit"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(69.84% 0.15 162.21deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -233,15 +206,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "mint": {
-    "fonts": {
-      "base": "system-ui, sans-serif",
-      "heading": "inherit"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(83.57% 0.18 148.98deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -267,15 +236,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "modern": {
-    "fonts": {
-      "base": "ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri,\n\t\tsource-sans-pro, sans-serif",
-      "heading": "ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri,\n\t\tsource-sans-pro, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(65.59% 0.21 354.32deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -301,15 +266,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "mona": {
-    "fonts": {
-      "base": "system-ui, sans-serif",
-      "heading": "system-ui, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(56.31% 0.21 294.98deg)",
       "primary-contrast": "var(--color-primary-contrast-light)",
@@ -335,15 +296,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "nosh": {
-    "fonts": {
-      "base": "Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif",
-      "heading": "Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(56.22% 0.23 24.62deg)",
       "primary-contrast": "var(--color-primary-contrast-light)",
@@ -369,15 +326,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "nouveau": {
-    "fonts": {
-      "base": "system-ui, sans-serif",
-      "heading": "Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(83.44% 0.16 97deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -403,15 +356,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "pine": {
-    "fonts": {
-      "base": "Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif",
-      "heading": "Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(62.15% 0.08 79.85deg)",
       "primary-contrast": "var(--color-primary-contrast-light)",
@@ -437,15 +386,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "reign": {
-    "fonts": {
-      "base": "Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif",
-      "heading": "ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(94.82% 0.17 110.7deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -471,15 +416,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "rocket": {
-    "fonts": {
-      "base": "system-ui, sans-serif",
-      "heading": "Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(71.48% 0.13 215.21deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -505,15 +446,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "rose": {
-    "fonts": {
-      "base": "Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif",
-      "heading": "Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(69.89% 0.13 348.12deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -539,15 +476,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "sahara": {
-    "fonts": {
-      "base": "Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif",
-      "heading": "Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(78.19% 0.15 76.87deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -573,15 +506,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "seafoam": {
-    "fonts": {
-      "base": "Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif",
-      "heading": "Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(80.78% 0.07 190.34deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -607,15 +536,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "terminus": {
-    "fonts": {
-      "base": "Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif",
-      "heading": "Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(48.65% 0.3 279.02deg)",
       "primary-contrast": "var(--color-primary-contrast-light)",
@@ -641,15 +566,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "vintage": {
-    "fonts": {
-      "base": "Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif",
-      "heading": "Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(71.39% 0.16 59.66deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -675,15 +596,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "vox": {
-    "fonts": {
-      "base": "Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif",
-      "heading": "Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(82.71% 0.1 51.5deg)",
       "primary-contrast": "var(--color-primary-contrast-dark)",
@@ -709,15 +626,11 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   },
   "wintry": {
-    "fonts": {
-      "base": "system-ui, sans-serif",
-      "heading": "Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif"
-    },
+    "fonts": {},
     "colors": {
       "primary": "oklch(62.31% 0.19 259.81deg)",
       "primary-contrast": "var(--color-primary-contrast-light)",
@@ -743,7 +656,6 @@
     },
     "border": {
       "width": "1px",
-      "divide": "1px",
       "ring": "1px"
     }
   }
