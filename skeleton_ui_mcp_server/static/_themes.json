@@ -48,8 +48,8 @@
       "surface-contrast": "var(--color-surface-contrast-light)"
     },
     "radius": {
-      "base": "0.25rem",
-      "container": "0.25rem"
+      "base": "0.5rem",
+      "container": "0.5rem"
     },
     "spacing": {
       "base": "0.25rem"
