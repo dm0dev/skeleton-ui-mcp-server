@@ -14,7 +14,7 @@ Documentation is served from pre-fetched static files — no live network calls 
 |------------------------------|---------------------------------------------------------------------------------------------------|
 | `search_docs(query, limit?)` | Keyword search across titles, slugs, excerpts, and groups. Use this first to find the right slug. |
 | `list_docs_by_group(group)`  | List all docs in a category (e.g. `"Framework Components"`).                                      |
-| `list_all_docs()`            | Full index of all 58 docs. Prefer the tools above.                                                |
+| `list_all_docs()`            | Full index of all docs. Prefer the tools above.                                                   |
 | `get_docs_for(slug)`         | Returns full Markdown documentation for a slug.                                                   |
 | `list_themes()`              | List all available Skeleton UI preset themes.                                                     |
 | `get_theme_info(theme)`      | Get detailed design tokens (colors, fonts, etc.) for a specific theme.                            |

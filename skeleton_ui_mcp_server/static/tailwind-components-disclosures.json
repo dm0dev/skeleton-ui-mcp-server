@@ -1,0 +1,31 @@
+{
+  "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/disclosures.md",
+  "content": "# Disclosures\n\nToggle the visibility of collapsible content using the native HTML details element.\n\n```astro\n<details class=\"disclosure\">\n\t<summary>How long does shipping take?</summary>\n\t<div class=\"disclosure-content\">\n\t\t<p>\n\t\t\tStandard orders ship within 1-2 business days and arrive in 3-5 business days. Expedited\n\t\t\tshipping is available at checkout for next-day delivery in most regions.\n\t\t</p>\n\t</div>\n</details>\n\n```\n\n## Group\n\nWrap with `disclosure-group` and share a [`name`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details#name) attribute so only one item stays open at a time.\n\n```astro\n<div class=\"disclosure-group\">\n\t<details class=\"disclosure\" name=\"faq\">\n\t\t<summary>How long does shipping take?</summary>\n\t\t<div class=\"disclosure-content\">\n\t\t\t<p>\n\t\t\t\tStandard orders ship within 1-2 business days and arrive in 3-5 business days.\n\t\t\t\tExpedited shipping is available at checkout for next-day delivery in most regions.\n\t\t\t</p>\n\t\t</div>\n\t</details>\n\t<hr class=\"hr\" />\n\t<details class=\"disclosure\" name=\"faq\">\n\t\t<summary>What is your return policy?</summary>\n\t\t<div class=\"disclosure-content\">\n\t\t\t<p>\n\t\t\t\tReturns are accepted within 30 days of delivery. Items must be unused and in their\n\t\t\t\toriginal packaging. We provide a prepaid return label for orders over $50.\n\t\t\t</p>\n\t\t</div>\n\t</details>\n\t<hr class=\"hr\" />\n\t<details class=\"disclosure\" name=\"faq\">\n\t\t<summary>\n\t\t\t<span>Do you ship internationally?</span>\n\t\t</summary>\n\t\t<div class=\"disclosure-content\">\n\t\t\t<p>\n\t\t\t\tYes, we ship to over 60 countries. International orders typically arrive within 7-14\n\t\t\t\tbusiness days, and any applicable customs fees are calculated at checkout.\n\t\t\t</p>\n\t\t</div>\n\t</details>\n</div>\n\n```\n\n## Open\n\nAdd the `open` attribute to render a disclosure expanded by default.\n\n```astro\n<details class=\"disclosure\" open>\n\t<summary>How long does shipping take?</summary>\n\t<div class=\"disclosure-content\">\n\t\t<p>\n\t\t\tStandard orders ship within 1-2 business days and arrive in 3-5 business days. Expedited\n\t\t\tshipping is available at checkout for next-day delivery in most regions.\n\t\t</p>\n\t</div>\n</details>\n\n```\n\n## Animation\n\nThe slide animation is a progressive enhancement via [::details-content](https://developer.mozilla.org/en-US/docs/Web/CSS/::details-content) and [interpolate-size: allow-keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/interpolate-size). For unsupported browsers this will fall back to the native instant toggle.\n",
+  "title": "Disclosures",
+  "group": "Tailwind Components",
+  "outline": [
+    {
+      "heading": "Disclosures",
+      "level": 1
+    },
+    {
+      "heading": "Group",
+      "level": 2
+    },
+    {
+      "heading": "Open",
+      "level": 2
+    },
+    {
+      "heading": "Animation",
+      "level": 2
+    }
+  ],
+  "examples": [],
+  "sections": {
+    "Disclosures": "# Disclosures\n\nToggle the visibility of collapsible content using the native HTML details element.\n\n```astro\n<details class=\"disclosure\">\n\t<summary>How long does shipping take?</summary>\n\t<div class=\"disclosure-content\">\n\t\t<p>\n\t\t\tStandard orders ship within 1-2 business days and arrive in 3-5 business days. Expedited\n\t\t\tshipping is available at checkout for next-day delivery in most regions.\n\t\t</p>\n\t</div>\n</details>\n\n```",
+    "Group": "## Group\n\nWrap with `disclosure-group` and share a [`name`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details#name) attribute so only one item stays open at a time.\n\n```astro\n<div class=\"disclosure-group\">\n\t<details class=\"disclosure\" name=\"faq\">\n\t\t<summary>How long does shipping take?</summary>\n\t\t<div class=\"disclosure-content\">\n\t\t\t<p>\n\t\t\t\tStandard orders ship within 1-2 business days and arrive in 3-5 business days.\n\t\t\t\tExpedited shipping is available at checkout for next-day delivery in most regions.\n\t\t\t</p>\n\t\t</div>\n\t</details>\n\t<hr class=\"hr\" />\n\t<details class=\"disclosure\" name=\"faq\">\n\t\t<summary>What is your return policy?</summary>\n\t\t<div class=\"disclosure-content\">\n\t\t\t<p>\n\t\t\t\tReturns are accepted within 30 days of delivery. Items must be unused and in their\n\t\t\t\toriginal packaging. We provide a prepaid return label for orders over $50.\n\t\t\t</p>\n\t\t</div>\n\t</details>\n\t<hr class=\"hr\" />\n\t<details class=\"disclosure\" name=\"faq\">\n\t\t<summary>\n\t\t\t<span>Do you ship internationally?</span>\n\t\t</summary>\n\t\t<div class=\"disclosure-content\">\n\t\t\t<p>\n\t\t\t\tYes, we ship to over 60 countries. International orders typically arrive within 7-14\n\t\t\t\tbusiness days, and any applicable customs fees are calculated at checkout.\n\t\t\t</p>\n\t\t</div>\n\t</details>\n</div>\n\n```",
+    "Open": "## Open\n\nAdd the `open` attribute to render a disclosure expanded by default.\n\n```astro\n<details class=\"disclosure\" open>\n\t<summary>How long does shipping take?</summary>\n\t<div class=\"disclosure-content\">\n\t\t<p>\n\t\t\tStandard orders ship within 1-2 business days and arrive in 3-5 business days. Expedited\n\t\t\tshipping is available at checkout for next-day delivery in most regions.\n\t\t</p>\n\t</div>\n</details>\n\n```",
+    "Animation": "## Animation\n\nThe slide animation is a progressive enhancement via [::details-content](https://developer.mozilla.org/en-US/docs/Web/CSS/::details-content) and [interpolate-size: allow-keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/interpolate-size). For unsupported browsers this will fall back to the native instant toggle."
+  }
+}

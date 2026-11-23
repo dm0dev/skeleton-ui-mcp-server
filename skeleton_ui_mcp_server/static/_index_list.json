@@ -36,22 +36,13 @@
     "slug": "get-started-core-api"
   },
   {
-    "title": "Migrate from v2",
+    "title": "Migrate from v4",
     "excerpt": [
-      "Learn how to migrate from Skeleton v2 to the latest release."
+      "Learn how to migrate from Skeleton v4 to the latest v5 release."
     ],
     "group": "Get Started",
-    "url": "https://www.skeleton.dev/docs/svelte/get-started/migrate-from-v2.md",
-    "slug": "get-started-migrate-from-v2"
-  },
-  {
-    "title": "Migrate from v3",
-    "excerpt": [
-      "Learn how to migrate from Skeleton v3 to the latest release."
-    ],
-    "group": "Get Started",
-    "url": "https://www.skeleton.dev/docs/svelte/get-started/migrate-from-v3.md",
-    "slug": "get-started-migrate-from-v3"
+    "url": "https://www.skeleton.dev/docs/svelte/get-started/migrate-from-v4.md",
+    "slug": "get-started-migrate-from-v4"
   },
   {
     "title": "Dark Mode",
@@ -81,6 +72,15 @@
     "slug": "guides-cookbook"
   },
   {
+    "title": "Globals",
+    "excerpt": [
+      "Skeleton's global default styles."
+    ],
+    "group": "Design System",
+    "url": "https://www.skeleton.dev/docs/svelte/design/globals.md",
+    "slug": "design-system-globals"
+  },
+  {
     "title": "Themes",
     "excerpt": [
       "The Skeleton theme system."
@@ -97,15 +97,6 @@
     "group": "Design System",
     "url": "https://www.skeleton.dev/docs/svelte/design/colors.md",
     "slug": "design-system-colors"
-  },
-  {
-    "title": "Presets",
-    "excerpt": [
-      "Canned styles for your interface elements."
-    ],
-    "group": "Design System",
-    "url": "https://www.skeleton.dev/docs/svelte/design/presets.md",
-    "slug": "design-system-presets"
   },
   {
     "title": "Typography",
@@ -128,16 +119,43 @@
   {
     "title": "Iconography",
     "excerpt": [
-      "Learn how to integrate Lucide for iconography in Skeleton."
+      "Learn about the Skeleton iconography system."
     ],
     "group": "Design System",
     "url": "https://www.skeleton.dev/docs/svelte/design/iconography.md",
     "slug": "design-system-iconography"
   },
   {
+    "title": "Corner Shapes",
+    "excerpt": [
+      "Specifies the shape of a box's corners, within the area specified by its border-radius."
+    ],
+    "group": "Tailwind Utilities",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-utilities/corner-shapes.md",
+    "slug": "tailwind-utilities-corner-shapes"
+  },
+  {
+    "title": "Masks",
+    "excerpt": [
+      "Clip elements to a variety of decorative shapes using CSS mask-image."
+    ],
+    "group": "Tailwind Utilities",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-utilities/masks.md",
+    "slug": "tailwind-utilities-masks"
+  },
+  {
+    "title": "Presets",
+    "excerpt": [
+      "Canned styles for your interface elements."
+    ],
+    "group": "Tailwind Utilities",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-utilities/presets.md",
+    "slug": "tailwind-utilities-presets"
+  },
+  {
     "title": "Badges",
     "excerpt": [
-      "Provides a robust set of non-interactive badge styles."
+      "Show notifications, counts, or status information on navigation and icons"
     ],
     "group": "Tailwind Components",
     "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/badges.md",
@@ -164,11 +182,29 @@
   {
     "title": "Chips",
     "excerpt": [
-      "Provides a robust set of interactive chip styles."
+      "Use chips to enter information, make selections, filter content, or trigger actions."
     ],
     "group": "Tailwind Components",
     "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/chips.md",
     "slug": "tailwind-components-chips"
+  },
+  {
+    "title": "Dialogs",
+    "excerpt": [
+      "Display modal popups using the native HTML dialog element."
+    ],
+    "group": "Tailwind Components",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/dialogs.md",
+    "slug": "tailwind-components-dialogs"
+  },
+  {
+    "title": "Disclosures",
+    "excerpt": [
+      "Toggle the visibility of collapsible content using the native HTML details element."
+    ],
+    "group": "Tailwind Components",
+    "url": "https://www.skeleton.dev/docs/svelte/tailwind-components/disclosures.md",
+    "slug": "tailwind-components-disclosures"
   },
   {
     "title": "Dividers",
@@ -306,6 +342,24 @@
     "slug": "framework-components-listbox"
   },
   {
+    "title": "Locale Provider",
+    "excerpt": [
+      "Provides locale context to components for controlling reading direction."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/locale-provider.md",
+    "slug": "framework-components-locale-provider"
+  },
+  {
+    "title": "Marquee",
+    "excerpt": [
+      "Auto-scrolls content like logos, announcements, or featured items."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/marquee.md",
+    "slug": "framework-components-marquee"
+  },
+  {
     "title": "Menu",
     "excerpt": [
       "Accessible dropdown and context menus for actions and navigation."
@@ -367,6 +421,15 @@
     "group": "Framework Components",
     "url": "https://www.skeleton.dev/docs/svelte/framework-components/progress-linear.md",
     "slug": "framework-components-progress-linear"
+  },
+  {
+    "title": "QR Code",
+    "excerpt": [
+      "Render scannable QR codes with a frame, overlay, pattern, and download trigger."
+    ],
+    "group": "Framework Components",
+    "url": "https://www.skeleton.dev/docs/svelte/framework-components/qr-code.md",
+    "slug": "framework-components-qr-code"
   },
   {
     "title": "Rating Group",

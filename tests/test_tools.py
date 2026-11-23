@@ -48,9 +48,9 @@ class TestListDocsByGroup:
 
 
 class TestListAllDocs:
-    async def test_returns_all_58_docs(self):
+    async def test_returns_all_docs(self):
         result = await list_all_docs()
-        assert result.count('"slug"') == 58
+        assert result.count('"slug"') == 65
 
     async def test_result_covers_all_groups(self):
         result = await list_all_docs()

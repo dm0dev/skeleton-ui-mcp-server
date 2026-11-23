@@ -1,0 +1,101 @@
+{
+  "url": "https://www.skeleton.dev/docs/svelte/tailwind-utilities/masks.md",
+  "content": "# Masks\n\nClip elements to a variety of decorative shapes using CSS mask-image.\n\n```astro\n<img class=\"mask w-32 mask-circle\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-squircle w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-triangle-up w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-triangle-down w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-triangle-right w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-triangle-left w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-diamond w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-pentagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-hexagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-cube w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-octagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-decagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-star w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-heart w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-cross w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n## Shapes\n\nApply classes `mask mask-{shape}` with any of the shapes defined below.\n\n### Circle\n\n```astro\n<img class=\"mask w-32 mask-circle\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Squircle\n\n```astro\n<img class=\"mask mask-squircle w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Triangle Up\n\n```astro\n<img class=\"mask mask-triangle-up w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Triangle Down\n\n```astro\n<img class=\"mask mask-triangle-down w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Triangle Right\n\n```astro\n<img class=\"mask mask-triangle-right w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Triangle Left\n\n```astro\n<img class=\"mask mask-triangle-left w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Diamond\n\n```astro\n<img class=\"mask mask-diamond w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Pentagon\n\n```astro\n<img class=\"mask mask-pentagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Hexagon\n\n```astro\n<img class=\"mask mask-hexagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Cube\n\n```astro\n<img class=\"mask mask-cube w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Octagon\n\n```astro\n<img class=\"mask mask-octagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Decagon\n\n```astro\n<img class=\"mask mask-decagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Star\n\n```astro\n<img class=\"mask mask-star w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Heart\n\n```astro\n<img class=\"mask mask-heart w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n### Cross\n\n```astro\n<img class=\"mask mask-cross w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```\n\n## Custom Masks\n\nDefine your own custom shape. Any valid [CSS mask source](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/mask) will work.\n\n```css\n@utility mask-custom {\n\tmask-image: url(\"/path/to/your-shape.svg\");\n}\n```\n\n```html\n<img class=\"mask mask-custom w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n```\n",
+  "title": "Masks",
+  "group": "Tailwind Utilities",
+  "outline": [
+    {
+      "heading": "Masks",
+      "level": 1
+    },
+    {
+      "heading": "Shapes",
+      "level": 2
+    },
+    {
+      "heading": "Circle",
+      "level": 3
+    },
+    {
+      "heading": "Squircle",
+      "level": 3
+    },
+    {
+      "heading": "Triangle Up",
+      "level": 3
+    },
+    {
+      "heading": "Triangle Down",
+      "level": 3
+    },
+    {
+      "heading": "Triangle Right",
+      "level": 3
+    },
+    {
+      "heading": "Triangle Left",
+      "level": 3
+    },
+    {
+      "heading": "Diamond",
+      "level": 3
+    },
+    {
+      "heading": "Pentagon",
+      "level": 3
+    },
+    {
+      "heading": "Hexagon",
+      "level": 3
+    },
+    {
+      "heading": "Cube",
+      "level": 3
+    },
+    {
+      "heading": "Octagon",
+      "level": 3
+    },
+    {
+      "heading": "Decagon",
+      "level": 3
+    },
+    {
+      "heading": "Star",
+      "level": 3
+    },
+    {
+      "heading": "Heart",
+      "level": 3
+    },
+    {
+      "heading": "Cross",
+      "level": 3
+    },
+    {
+      "heading": "Custom Masks",
+      "level": 2
+    }
+  ],
+  "examples": [],
+  "sections": {
+    "Masks": "# Masks\n\nClip elements to a variety of decorative shapes using CSS mask-image.\n\n```astro\n<img class=\"mask w-32 mask-circle\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-squircle w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-triangle-up w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-triangle-down w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-triangle-right w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-triangle-left w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-diamond w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-pentagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-hexagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-cube w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-octagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-decagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-star w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-heart w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n<img class=\"mask mask-cross w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Shapes": "## Shapes\n\nApply classes `mask mask-{shape}` with any of the shapes defined below.",
+    "Circle": "### Circle\n\n```astro\n<img class=\"mask w-32 mask-circle\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Squircle": "### Squircle\n\n```astro\n<img class=\"mask mask-squircle w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Triangle Up": "### Triangle Up\n\n```astro\n<img class=\"mask mask-triangle-up w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Triangle Down": "### Triangle Down\n\n```astro\n<img class=\"mask mask-triangle-down w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Triangle Right": "### Triangle Right\n\n```astro\n<img class=\"mask mask-triangle-right w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Triangle Left": "### Triangle Left\n\n```astro\n<img class=\"mask mask-triangle-left w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Diamond": "### Diamond\n\n```astro\n<img class=\"mask mask-diamond w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Pentagon": "### Pentagon\n\n```astro\n<img class=\"mask mask-pentagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Hexagon": "### Hexagon\n\n```astro\n<img class=\"mask mask-hexagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Cube": "### Cube\n\n```astro\n<img class=\"mask mask-cube w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Octagon": "### Octagon\n\n```astro\n<img class=\"mask mask-octagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Decagon": "### Decagon\n\n```astro\n<img class=\"mask mask-decagon w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Star": "### Star\n\n```astro\n<img class=\"mask mask-star w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Heart": "### Heart\n\n```astro\n<img class=\"mask mask-heart w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Cross": "### Cross\n\n```astro\n<img class=\"mask mask-cross w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n\n```",
+    "Custom Masks": "## Custom Masks\n\nDefine your own custom shape. Any valid [CSS mask source](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/mask) will work.\n\n```css\n@utility mask-custom {\n\tmask-image: url(\"/path/to/your-shape.svg\");\n}\n```\n\n```html\n<img class=\"mask mask-custom w-32\" src=\"https://i.pravatar.cc/150?img=48\" alt=\"Avatar\" />\n```"
+  }
+}

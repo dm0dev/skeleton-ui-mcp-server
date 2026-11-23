@@ -172,7 +172,7 @@ async def list_docs_by_group(group: str) -> str:
 @mcp.tool()
 async def list_all_docs() -> str:
     """
-    List all 58 available Skeleton UI docs with slug, title, group, and excerpt.
+    List all available Skeleton UI docs with slug, title, group, and excerpt.
     Prefer search_docs for keyword lookup or list_docs_by_group to browse a category.
     Use this only when you need a complete index of all available documentation.
     """

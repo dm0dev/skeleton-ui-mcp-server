@@ -5,8 +5,7 @@
 - [Installation](/docs/svelte/get-started/installation.md)
 - [Fundamentals](/docs/svelte/get-started/fundamentals.md)
 - [Core API](/docs/svelte/get-started/core-api.md)
-- [Migrate from v2](/docs/svelte/get-started/migrate-from-v2.md)
-- [Migrate from v3](/docs/svelte/get-started/migrate-from-v3.md)
+- [Migrate from v4](/docs/svelte/get-started/migrate-from-v4.md)
 
 ### Guides
 
@@ -16,12 +15,18 @@
 
 ### Design System
 
+- [Globals](/docs/svelte/design/globals.md)
 - [Themes](/docs/svelte/design/themes.md)
 - [Colors](/docs/svelte/design/colors.md)
-- [Presets](/docs/svelte/design/presets.md)
 - [Typography](/docs/svelte/design/typography.md)
 - [Spacing](/docs/svelte/design/spacing.md)
 - [Iconography](/docs/svelte/design/iconography.md)
+
+### Tailwind Utilities
+
+- [Corner Shapes](/docs/svelte/tailwind-utilities/corner-shapes.md)
+- [Masks](/docs/svelte/tailwind-utilities/masks.md)
+- [Presets](/docs/svelte/tailwind-utilities/presets.md)
 
 ### Tailwind Components
 
@@ -29,6 +34,8 @@
 - [Buttons](/docs/svelte/tailwind-components/buttons.md)
 - [Cards](/docs/svelte/tailwind-components/cards.md)
 - [Chips](/docs/svelte/tailwind-components/chips.md)
+- [Dialogs](/docs/svelte/tailwind-components/dialogs.md)
+- [Disclosures](/docs/svelte/tailwind-components/disclosures.md)
 - [Dividers](/docs/svelte/tailwind-components/dividers.md)
 - [Forms and Inputs](/docs/svelte/tailwind-components/forms.md)
 - [Placeholders](/docs/svelte/tailwind-components/placeholders.md)
@@ -47,6 +54,8 @@
 - [File Upload](/docs/svelte/framework-components/file-upload.md)
 - [Floating Panel](/docs/svelte/framework-components/floating-panel.md)
 - [Listbox](/docs/svelte/framework-components/listbox.md)
+- [Locale Provider](/docs/svelte/framework-components/locale-provider.md)
+- [Marquee](/docs/svelte/framework-components/marquee.md)
 - [Menu](/docs/svelte/framework-components/menu.md)
 - [Navigation](/docs/svelte/framework-components/navigation.md)
 - [Pagination](/docs/svelte/framework-components/pagination.md)
@@ -54,6 +63,7 @@
 - [Portal](/docs/svelte/framework-components/portal.md)
 - [Progress - Circular](/docs/svelte/framework-components/progress-circular.md)
 - [Progress - Linear](/docs/svelte/framework-components/progress-linear.md)
+- [QR Code](/docs/svelte/framework-components/qr-code.md)
 - [Rating Group](/docs/svelte/framework-components/rating-group.md)
 - [Segmented Control](/docs/svelte/framework-components/segmented-control.md)
 - [Slider](/docs/svelte/framework-components/slider.md)

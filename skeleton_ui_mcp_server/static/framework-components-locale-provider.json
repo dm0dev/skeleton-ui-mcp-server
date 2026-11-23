@@ -1,0 +1,39 @@
+{
+  "url": "https://www.skeleton.dev/docs/svelte/framework-components/locale-provider.md",
+  "content": "# Locale Provider\n\nProvides locale context to components for controlling reading direction.\n\n```svelte\n<script lang=\"ts\">\n\timport { LocaleProvider } from \"@skeletonlabs/skeleton-svelte\";\n</script>\n\n<LocaleProvider locale=\"en-US\">\n\t<!-- your app -->\n</LocaleProvider>\n```\n\n## Anatomy\n\nHere's an overview of how the LocaleProvider component is structured in code:\n\n```svelte\n<script lang=\"ts\">\n\timport { LocaleProvider } from \"@skeletonlabs/skeleton-svelte\";\n</script>\n\n<LocaleProvider></LocaleProvider>\n```\n\n## API Reference\n\n### Root\n\n| Prop     | Description                                                   | Type                       | Default |\n| -------- | ------------------------------------------------------------- | -------------------------- | ------- |\n| locale   | The locale to use for the application.                        | string                     | 'en-US' |\n| children | The default slot content to be rendered within the component. | Snippet\\<\\[]> \\| undefined | -       |\n\n### Context\n\n| Prop     | Description | Type             | Default |\n| -------- | ----------- | ---------------- | ------- |\n| children | -           | Snippet\\<\\[any]> | -       |\n",
+  "title": "Locale Provider",
+  "group": "Framework Components",
+  "outline": [
+    {
+      "heading": "Locale Provider",
+      "level": 1
+    },
+    {
+      "heading": "Anatomy",
+      "level": 2
+    },
+    {
+      "heading": "API Reference",
+      "level": 2
+    },
+    {
+      "heading": "Root",
+      "level": 3
+    },
+    {
+      "heading": "Context",
+      "level": 3
+    }
+  ],
+  "examples": [
+    "<script lang=\"ts\">\n\timport { LocaleProvider } from \"@skeletonlabs/skeleton-svelte\";\n</script>\n\n<LocaleProvider locale=\"en-US\">\n\t<!-- your app -->\n</LocaleProvider>",
+    "<script lang=\"ts\">\n\timport { LocaleProvider } from \"@skeletonlabs/skeleton-svelte\";\n</script>\n\n<LocaleProvider></LocaleProvider>"
+  ],
+  "sections": {
+    "Locale Provider": "# Locale Provider\n\nProvides locale context to components for controlling reading direction.\n\n```svelte\n<script lang=\"ts\">\n\timport { LocaleProvider } from \"@skeletonlabs/skeleton-svelte\";\n</script>\n\n<LocaleProvider locale=\"en-US\">\n\t<!-- your app -->\n</LocaleProvider>\n```",
+    "Anatomy": "## Anatomy\n\nHere's an overview of how the LocaleProvider component is structured in code:\n\n```svelte\n<script lang=\"ts\">\n\timport { LocaleProvider } from \"@skeletonlabs/skeleton-svelte\";\n</script>\n\n<LocaleProvider></LocaleProvider>\n```",
+    "API Reference": "## API Reference",
+    "Root": "### Root\n\n| Prop     | Description                                                   | Type                       | Default |\n| -------- | ------------------------------------------------------------- | -------------------------- | ------- |\n| locale   | The locale to use for the application.                        | string                     | 'en-US' |\n| children | The default slot content to be rendered within the component. | Snippet\\<\\[]> \\| undefined | -       |",
+    "Context": "### Context\n\n| Prop     | Description | Type             | Default |\n| -------- | ----------- | ---------------- | ------- |\n| children | -           | Snippet\\<\\[any]> | -       |"
+  }
+}
