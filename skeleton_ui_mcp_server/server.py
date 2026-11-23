@@ -1,9 +1,12 @@
 import json
 from pathlib import Path
 
-from mcp.server.fastmcp import FastMCP
+try:
+    from mcp.server.mcpserver import MCPServer
+except ImportError:
+    from mcp.server.fastmcp import FastMCP as MCPServer  # type: ignore[no-redef]
 
-mcp = FastMCP("skeleton-ui-docs")
+mcp = MCPServer("skeleton-ui-docs")
 BASE_DIR = Path(__file__).parent
 
 
